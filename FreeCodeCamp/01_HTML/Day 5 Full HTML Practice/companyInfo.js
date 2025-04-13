@@ -56,3 +56,10 @@ let contact = {
     contactEmail : "@gmail.com",
     contactAddress: "25000, KPK PAK."
 }
+
+let DOMCompanyName = document.getElementById("companyFullName");
+DOMCompanyName.textContent = companyFullName;
+
+function ProductRender(){
+    
+}
