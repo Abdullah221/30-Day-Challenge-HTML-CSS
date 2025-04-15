@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2M Live Preview</title>
+    <style>
+        body {
+            background-color: #eee;
+        }
+        main {
+           display: flex;
+           justify-content: space-between;
+        }
+        textarea{
+            width: 100%;
+            height: 90vh;
+        }
+        section {
+            width: 45%;
+            position:relative;
+        }
+        button {
+            position: absolute;
+            top: 50px;
+            right: 50px;
+        }
+    </style>
+</head>
+<body>
+    
+
+    <main>
+        <section id="Code">
+            <textarea name="livePreviewCode" id="liveScript"></textarea>
+            <button onclick="SubmitCode()">Live Preview</button>
+        </section>
+        <section id="LivePreview">
+    
+        </section>
+    </main>
+    <script>
+        const inputField = document.getElementById("liveScript");
+        const livePreview = document.getElementById("LivePreview");
+
+        function SubmitCode(){
+            livePreview.innerHTML = inputField.value;
+        }
+    </script>
+</body>
+</html>
