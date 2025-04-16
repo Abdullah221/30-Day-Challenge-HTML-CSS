@@ -1,3 +1,5 @@
+// BAISC DATA
+
 let companyName = "Miss Neelam";
 let companyFullName = "Miss Neelam Cosmetics";
 let Products = [{
@@ -44,7 +46,6 @@ let Products = [{
         productImgThree: "three",
     },
     productVideo: "src",
-},{
 }
 ];
 let aboutUs = {
@@ -57,9 +58,16 @@ let contact = {
     contactAddress: "25000, KPK PAK."
 }
 
+
+// DOM MANIPULATION
+
 let DOMCompanyName = document.getElementById("companyFullName");
 DOMCompanyName.textContent = companyFullName;
 
 function ProductRender(){
+    
+}
+
+function DescriptionRender(){
     
 }
