@@ -2,33 +2,34 @@
     padding: 0px;
     margin: 0px;
 }
-main {
-    display: flex;
-    width: 400vw;
+body {
+    width: 100vw;
+    height: 100vh;
 }
-section {
+.flex {
+    display: flex;
+    width: 500vw;
+}
+section.container {
     width: 100vw;
     height: 100vh;
 }
 header {
-    position: absolute;
+    position: fixed;
     top: 0px;
-    display: flex;
-    justify-content: space-around;
 }
-header nav ul li{
-    display: inline-block;
+#Home{
+    background-color: red;
 }
-a {
-    text-decoration: none;
-}
-footer {
-    position: absolute;
-    bottom: 0px;
-}
-.Portfolio {
+#Education {
     background-color: green;
 }
-.Home {
-    background-color: red;
+#Experience {
+    background-color: blue;
+}
+#Portfolio {
+    background-color: grey;
+}
+#ContactUs{
+    background-color: brown;
 }
